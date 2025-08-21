@@ -1,0 +1,411 @@
+.show{opacity: 1 !important;}
+.row{margin: 0 !important;}
+.container-earth{
+    background-image: url(../background.jpg); 
+    background-size: 100%;
+    align-items: flex-start;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+ 
+.bgsaudi{
+    background-image: url(../bgsaudi.png); 
+    transition:   1s ease; /* Smooth transition on transform for 2 seconds */
+
+}
+ 
+  
+#earth{    
+    position: relative;
+    max-width: 500px;
+    border-radius: 100%;
+    margin: 50px 50px; 
+    overflow : hidden;
+    box-shadow: 0 0 250px #88c5ff59, inset 0 4px 14px #88ccffb0, inset 0 0 84px 14px #000000; /* Smooth transition on transform for 2 seconds */
+}
+  
+#bg-earth{
+    position: absolute;
+    background-image: url(../earth.jfif); 
+    width: 100%;
+    height: 100%;
+    background-position: 0;
+    background-repeat: no-repeat;
+    border-radius: 100%;
+    background-size: cover;
+    box-shadow: 0 0 250px #88c5ff59, inset 0 4px 14px #88ccffb0, inset 0 0 84px 14px #000000; /* Smooth transition on transform for 2 seconds */
+    background-repeat: no-repeat;
+    transition:   2s ease; /* Smooth transition on transform for 2 seconds */
+}
+#saudi_arabia{
+    position: absolute;
+    background-image: url(../saudi.png);
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 188%;
+    transition: 3s ease;
+    box-shadow: 0 0 250px #88c5ff59, inset 0 4px 14px #88ccffb0, inset 0 0 84px 14px #000000; /* Smooth transition on transform for 2 seconds */
+    border-radius: 100%;
+    opacity: 0;
+}
+.move {
+    background-position: 70% 0 !important;
+ 
+}
+.enlarge {
+    transform: scale(1.5)  !important;    
+    transition:   1s ease !important;     /* Smooth transition on transform for 2 seconds */
+
+}
+.tosaudi {
+    transform: scale(3.5) translatey(13%) translatex(-7%) !important;
+    transition:   1.5s ease !important;     /* Smooth transition on transform for 2 seconds */
+/* opacity: 0; */
+}
+.tosaudihide {
+     /* Smooth transition on transform for 2 seconds */
+    opacity: 0;
+}
+.displaysaudi {
+    background-size: 270% !important;
+    opacity: 1 !important;
+    background-position: 54% 58%!important;
+}
+
+.titel-list {
+    font-size: 40px;
+    color: #fff;
+    font-weight: bold;
+    margin: 0px 20px;
+    max-width: 400px;
+    margin: auto;
+
+}
+#list-item-airport {
+    height: 100%;
+    opacity: 0;
+}
+.countainer-list{
+    height: 335px;
+    background: #000000ad;
+}
+.sous-titel-list{
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding-top: 30px;
+}
+.item{
+    color: #CFA89E;
+    width: 200px;
+    margin: auto;
+    margin-top: 35px;
+    padding-top: 15px;
+    border-top: 1px solid #CFA89E;
+}
+#list-airport-name{
+    background : #000000ad;
+    opacity: 0;
+}
+.item-name{
+    display: flex;
+    color: #fff;
+    font-size: 13px;
+}
+.item-name{
+    display: flex;
+    color: #fff;
+    font-size: 13px;
+}
+.short-name::after  {
+    content: '';
+    width: 9PX;
+    DISPLAY: block;
+    HEIGHT: 9PX;
+    BACKGROUND: #957F43;
+    margin: 0 9px;
+    border-radius: 100%;
+ }
+.short-name{
+    display: flex;
+    align-items: center;
+ }
+ #list-airport-name .sous-titel-list {
+    padding-top: 50px !important;
+    padding-bottom: 35px;
+}
+.airport{
+    color: #000;
+    z-index: 19;
+    position: absolute;
+    font-size: 13px;
+    font-weight: 500; 
+
+}
+#airport_2{
+ 
+    left: 24%;
+    top: 65%;
+    align-items: center;
+    display: flex;
+}
+.airport::after{
+    content: '';
+    width: 12PX;
+    DISPLAY: block;
+    HEIGHT: 12PX;
+    BACKGROUND: #957F43;
+    margin: 0px 2px;
+    border-radius: 100%;
+ }
+ .titel-airpoert{
+    color: #fff;
+    font-size: 40px;
+    margin-bottom: 15px;
+    width: 100%;
+    font-weight: 600;
+ }
+ .div-info-airport {
+    display: NONE;
+    z-index: 40;
+}
+ .info-airport{
+    display: NONE;
+    background: #000000ad;
+    max-width: 400px;
+
+ }
+ .info-airport img{
+    width: 100%;
+ }
+ .info-airport ul{
+    width: 100%;
+    color: #fff;
+    opacity: 0.5;
+    list-style-type: none;
+    padding: 0;
+    margin-top: 30px;
+ }
+.black-div{
+    position: absolute;
+    width: 100vw;
+    height: 100%;
+    background: #00000078;
+    z-index: 20;
+    padding: 0;
+    left: 0;
+    display: none;
+    top: 0;
+}
+.white-div{
+    display: none;
+    position: absolute;
+    top: 10%;
+    background: #F4F4F4;
+    width: 40%;
+    z-index: 30;
+    right: 5%;
+    height: 400px;
+}
+.white-div .body-white-div>div{
+    display: none;
+    flex-wrap: wrap;
+}
+.body-white-div{
+    padding: 10px 20px;
+    border-bottom: 1px SOLID #00000091;
+    margin-bottom: 5px;
+    border-left: 1px SOLID #00000091;
+    border-right: 1px SOLID #00000091;
+    height: 359px;
+
+}
+.header-white-div{
+
+    display: flex;
+    justify-content: flex-end;
+    padding: 5px 0px;
+    margin-top: 5px;
+    border: 1px SOLID #00000091;
+    BORDER-RADIUS: 10px 10px 0px 0px;
+}
+ 
+.header-white-div>a{
+ 
+ 
+    display: flex;
+    width: fit-content;
+    height: 14px;
+    margin-right: 12px;
+
+}
+.titel-airpoert p,.titel-airpoert span{
+    margin: 0;
+    color: #030303;
+    font-size: 20px;
+}
+ .titel-airpoert span{
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+}
+.titel-airpoert span::before{
+    content: '';
+    width: 14PX;
+    DISPLAY: block;
+    HEIGHT: 14PX;
+    BACKGROUND: #957F43;
+    border-radius: 100%;
+    margin-right: 5px;
+}
+.Div-map-airpoert{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    align-items: center;
+}
+.btn-map{
+    
+    padding: 10px 25px;
+    margin: 15px 0;
+    background: #fff;
+    border-radius: 50px;
+    color: #003E4F;
+    font-weight: 500;
+    text-decoration: none;
+}
+.Div-tab-airpoert{
+    width: 50%;
+}
+.Div-tab-airpoert table{
+    width: 100%;
+    font-size: 13px;
+    margin-left: 20px;
+    color: #000;
+    line-height: 17px;
+
+}
+.Div-tab-airpoert table .titel-tab{
+    font-weight: 600;
+}
+.Facilities-desc-airpoert{
+    display: flex;
+    flex-direction: column;
+    font-size: 13px;
+    font-weight: 400;
+}
+.services-div .titel-airpoert{
+    width: 60%;
+}
+.services-desc-airpoert{
+    width: 60%;
+    padding-top: 10%;
+    text-align: justify;
+    font-size: 11px;
+ 
+}
+.services-list-airpoert{
+    width: 40%;
+    font-size: 13px;
+    display: flex;
+    flex-direction: column;
+    font-weight: 700;
+ 
+}
+.services-desc-airpoert{
+    display: flex;
+    flex-direction: column;
+    font-size: 13px;
+    font-weight: 400;
+}
+.RETURN img{
+    width: 20px;
+}
+.btn-modal-close img{
+    width: 10px;
+}
+.btn-modal-close img{
+    left: 32%;
+    top: 56%;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+.RETURN{
+    display: flex;
+    color: #fff;
+    text-decoration: unset;
+    align-items: center;
+    padding-left: 40px;
+}
+#airport_3{
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+.titel-desc {
+    text-transform: uppercase;
+}
+.Div-map-airpoert iframe{
+    width: 100%;
+}
+.head-div , .foot-div{
+    height: 1000px;
+    background: #2c4656;
+}
+.RETURN:hover , .RETURN:focus  {
+    color: #fff;
+ 
+}
+@media (min-width: 993px) {
+    #list-item-airport {
+        margin-top: 10%;
+     }
+ 
+    .container-earth{
+        padding: 25px 20px 10px 20px;
+     }
+     .info-airport {
+ 
+        width: fit-content;
+        padding: 0px 40px 15% 40px;
+        padding-bottom: 10px !important;
+    }
+}
+ 
+ 
+@media (max-width: 992px) {
+    #list-item-airport {
+        margin-top: 40px;
+        padding: 20px;
+     }
+    .info-airport {
+        max-width: 400px;
+        padding: 0 40px;
+        margin: auto;
+    }
+    #earth {
+        margin: 50px auto!important;
+    }
+    .white-div {
+ 
+        width: 90%;
+    
+    }
+}
+ 
+ 
+ 
+ 
+@media (max-width: 1315px) {
+    .titel-list{
+        font-size: 35px;
+      }
+  
+}
+ 
+ 
+ 
