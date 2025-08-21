@@ -441,6 +441,10 @@ section.visible {
     border-radius: 10px;
     transition: all 0.3s ease;
 }
+.contact-item a{
+    color:#000 !important ;
+    text-decoration: none !important;
+}
 
 .contact-item:hover {
     transform: translateX(5px);
