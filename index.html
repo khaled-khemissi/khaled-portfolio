@@ -9,18 +9,23 @@
 
 </head>
 <body>
-    <!-- Navigation -->
     <nav class="navbar">
         <div class="container nav-container">
             <div class="logo">Khaled Khemissi</div>
             <ul class="nav-menu">
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><button class="theme-toggle" id="themeToggle"><i class="fas fa-moon"></i></button></li>
+                <li><a href="#about" data-key="navAbout">About</a></li>
+                <li><a href="#skills" data-key="navSkills">Skills</a></li>
+                <li><a href="#experience" data-key="navExperience">Experience</a></li>
+                <li><a href="#projects" data-key="navProjects">Projects</a></li>
+                <li><a href="#education" data-key="navEducation">Education</a></li>
+                <li><a href="#contact" data-key="navContact">Contact</a></li>
+                <li>
+                    <button class="theme-toggle" id="themeToggle"><i class="fas fa-moon"></i></button>
+                </li>
+                <li>
+                    <button class="lang-btn active" id="enBtn"><img src="eng.jpg" alt="" srcset=""> </button>
+                    <button class="lang-btn" id="frBtn"><img src="fr.avif" alt="" srcset=""></button>
+                </li>
             </ul>
             <button class="mobile-menu-btn" id="mobileMenuBtn">
                 <i class="fas fa-bars"></i>
@@ -31,32 +36,31 @@
     <header>
         <div class="container hero">
             <img src="Khaled.jpeg" alt="Khaled Khemissi" class="profile-img">
-            <h1>Khaled Khemissi</h1>
-            <p>Full Stack Web Developer</p>
+            <h1 data-key="headerName">Khaled Khemissi</h1>
+            <p data-key="headerTitle">Full Stack Web Developer</p>
         </div>
     </header>
-
     <section id="about">
         <div class="container">
             <div class="about">
                 <div class="section-title">
-                    <h2>About Me</h2>
+                    <h2 data-key="aboutTitle">About Me</h2>
                 </div>
-                <p>With a strong sense of responsibility, great autonomy, and a perfectionist mindset, I leverage my solid background to effectively contribute to your company's success.</p>
-                <p>As an experienced full stack web developer, I have worked on various projects ranging from custom web applications to e-commerce solutions.</p>
+                <p data-key="aboutText1">With a strong sense of responsibility, great autonomy, and a perfectionist mindset, I leverage my solid background to effectively contribute to your company's success.</p>
+                <p data-key="aboutText2">As an experienced full stack web developer, I have worked on various projects ranging from custom web applications to e-commerce solutions.</p>
                 
                 <div class="languages">
                     <div class="language-item">
-                        <div class="language-name">Arabic</div>
-                        <div class="language-level">Native</div>
+                        <div class="language-name" data-key="langArabic">Arabic</div>
+                        <div class="language-level" data-key="langArabicLevel">Native</div>
                     </div>
                     <div class="language-item">
-                        <div class="language-name">French</div>
-                        <div class="language-level">Intermediate</div>
+                        <div class="language-name" data-key="langFrench">French</div>
+                        <div class="language-level" data-key="langFrenchLevel">Intermediate</div>
                     </div>
                     <div class="language-item">
-                        <div class="language-name">English</div>
-                        <div class="language-level">Intermediate</div>
+                        <div class="language-name" data-key="langEnglish">English</div>
+                        <div class="language-level" data-key="langEnglishLevel">Intermediate</div>
                     </div>
                 </div>
             </div>
@@ -67,7 +71,7 @@
         <div class="container">
             <div class="skills">
                 <div class="section-title">
-                    <h2>Technical Skills</h2>
+                    <h2 data-key="skillsTitle">Technical Skills</h2>
                 </div>
                 <div class="skills-grid">
                     <div class="skill-item">
@@ -179,21 +183,21 @@
         <div class="container">
             <div class="experience">
                 <div class="section-title">
-                    <h2>Work Experience</h2>
+                    <h2 data-key="experienceTitle">Work Experience</h2>
                 </div>
                 <div class="timeline">
                     <div class="timeline-item">
                         <span class="timeline-date">12/2022 - 10/2024</span>
                         <div class="timeline-content">
-                            <h3>Full Stack Web Developer - 3W WIT</h3>
+                            <h3 data-key="expJobTitle">Full Stack Web Developer - 3W WIT</h3>
                             <ul>
-                                <li>Development of web applications with Symfony and Laravel, integrating custom entities and services for tailored solutions.</li>
-                                <li>Maintenance and performance optimization to ensure robust and efficient applications.</li>
-                                <li>Design and management of over 20 projects on WordPress and PrestaShop, including custom themes, plugins, and widgets.</li>
-                                <li>Creation of dynamic and aesthetic pages with Elementor to enhance user experience.</li>
-                                <li>Integration of interactive features with jQuery, such as responsive menus and form validation.</li>
-                                <li>Use of AJAX to optimize website performance and interactivity.</li>
-                                <li>Mentoring new developers for quick and effective integration into projects.</li>
+                                <li data-key="exp1">Development of web applications with Symfony and Laravel, integrating custom entities and services for tailored solutions.</li>
+                                <li data-key="exp2">Maintenance and performance optimization to ensure robust and efficient applications.</li>
+                                <li data-key="exp3">Design and management of over 20 projects on WordPress and PrestaShop, including custom themes, plugins, and widgets.</li>
+                                <li data-key="exp4">Creation of dynamic and aesthetic pages with Elementor to enhance user experience.</li>
+                                <li data-key="exp5">Integration of interactive features with jQuery, such as responsive menus and form validation.</li>
+                                <li data-key="exp6">Use of AJAX to optimize website performance and interactivity.</li>
+                                <li data-key="exp7">Mentoring new developers for quick and effective integration into projects.</li>
                             </ul>
                         </div>
                     </div>
@@ -201,110 +205,117 @@
             </div>
         </div>
     </section>
-
-    <section id="projects">
-        <div class="container">
-            <div class="projects">
-                <div class="section-title">
-                    <h2>Featured Projects</h2>
+    
+ <section id="projects">
+    <div class="container">
+        <div class="projects">
+            <div class="section-title">
+                <h2 data-key="projectsTitle">Featured Projects</h2>
+            </div>
+            <div class="projects-grid">
+                 <div class="project-card">
+                    <img src="saudi-arabia-map.PNG" class="project-img">
+                    <div class="project-content">
+                        <h3 data-key="proj1Title">Interactive Map</h3>
+                        <div class="project-tags">
+                            <span class="project-tag">Html</span>
+                            <span class="project-tag">CSS</span>
+                            <span class="project-tag">JQuery</span>
+                        </div>
+                        <p data-key="proj1Desc">A responsive web-based map that lets users explore locations and view details by interacting with them.</p>
+                        <div class="project-links">
+                            <a target="_blank" href="https://khaled-khemissi.github.io/saudi-arabia-map/" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                        </div>
+                    </div>
                 </div>
-                <div class="projects-grid">
-                    <div class="project-card">
-                        <img src="saudi-arabia-map.PNG"  class="project-img">
-                        <div class="project-content">
-                            <h3>Interactive Map</h3>
-                            <div class="project-tags">
-                                <span class="project-tag">Html</span>
-                                <span class="project-tag">css</span>
-                                <span class="project-tag">Jquery</span>
-                            </div>
-                            <p>A responsive web-based map that lets users explore locations and view details by interacting with them.</p>
-                            <div class="project-links">
-                                <a  target="_blank" href="https://khaled-khemissi.github.io/saudi-arabia-map/" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-                             </div>
+
+                 <div class="project-card">
+                    <img src="eurex.PNG" class="project-img">
+                    <div class="project-content">
+                        <h3 data-key="proj2Title">Developed the Front-End of Eurex Website</h3>
+                        <div class="project-tags">
+                            <span class="project-tag">Html</span>
+                            <span class="project-tag">CSS</span>
+                            <span class="project-tag">JQuery</span>
+                        </div>
+                        <p data-key="proj2Desc">Developed the entire front-end of the Eurex website, creating a responsive and interactive interface.</p>
+                        <div class="project-links">
+                            <a target="_blank" href="https://khaled-khemissi.github.io/eurex/index.html" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
                         </div>
                     </div>
-                    <div class="project-card">
-                        <img src="eurex.PNG"  class="project-img">
-                        <div class="project-content">
-                            <h3>Developed the front-end of site Web Eurex</h3>
-                            <div class="project-tags">
-                                <span class="project-tag">Html</span>
-                                <span class="project-tag">css</span>
-                                <span class="project-tag">Jquery</span>
-                            </div>
-                            <p>Developed the entire front-end of the Eurex website, creating a responsive and interactive interface .</p>
-                            <div class="project-links">
-                                <a  target="_blank" href="https://khaled-khemissi.github.io/eurex/index.html" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-                             </div>
+                </div>
+
+                 <div class="project-card">
+                    <img src="leaders-immo.PNG" class="project-img">
+                    <div class="project-content">
+                        <h3 data-key="proj3Title">Developed the Front-End of Leaders-Immo Website</h3>
+                        <div class="project-tags">
+                            <span class="project-tag">Html</span>
+                            <span class="project-tag">CSS</span>
+                            <span class="project-tag">JQuery</span>
+                        </div>
+                        <p data-key="proj3Desc">Developed the entire front-end of the Leaders-Immo website, creating a responsive and interactive interface.</p>
+                        <div class="project-links">
+                            <a target="_blank" href="https://khaled-khemissi.github.io/leaders-immo/index.html" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
                         </div>
                     </div>
-                    <div class="project-card">
-                        <img src="leaders-immo.PNG"  class="project-img">
-                        <div class="project-content">
-                            <h3>Developed the front-end of site Web leaders-immo </h3>
-                            <div class="project-tags">
-                                <span class="project-tag">Html</span>
-                                <span class="project-tag">css</span>
-                                <span class="project-tag">Jquery</span>
-                            </div>
-                            <p>Developed the entire front-end of site Web leaders-immo website, creating a responsive and interactive interface .</p>
-                            <div class="project-links">
-                                <a target="_blank" href="https://khaled-khemissi.github.io/leaders-immo/index.html" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-                             </div>
+                </div>
+
+                 <div class="project-card">
+                    <img src="https://placehold.co/600x400/3b82f6/FFFFFF?text=Hospital+Appointment+System" class="project-img" alt="Hospital Appointment System">
+                    <div class="project-content">
+                        <h3 data-key="proj4Title">Hospital Appointment System</h3>
+                        <div class="project-tags">
+                            <span class="project-tag">Symfony</span>
+                            <span class="project-tag">Bootstrap</span>
+                            <span class="project-tag">React.js</span>
                         </div>
+                        <p data-key="proj4Desc">A complete web application for managing appointments in a hospital environment, developed with Symfony and React.js.</p>
                     </div>
-                    <div class="project-card">
-                        <img src="https://placehold.co/600x400/3b82f6/FFFFFF?text=Hospital+Appointment+System" alt="Hospital Appointment Management Application" class="project-img">
-                        <div class="project-content">
-                            <h3>Hospital Appointment System</h3>
-                            <div class="project-tags">
-                                <span class="project-tag">Symfony</span>
-                                <span class="project-tag">Bootstrap</span>
-                                <span class="project-tag">React.js</span>
-                            </div>
-                            <p>A complete web application for managing appointments in a hospital environment, developed with Symfony and React.js.</p>
-                      
+                </div>
+ 
+                <div class="project-card">
+                    <img src="https://placehold.co/600x400/6366f1/FFFFFF?text=Hotel+Staff+Management" class="project-img" alt="Hotel Staff Management">
+                    <div class="project-content">
+                        <h3 data-key="proj5Title">Hotel Staff Management</h3>
+                        <div class="project-tags">
+                            <span class="project-tag">Node.js</span>
+                            <span class="project-tag">Bootstrap</span>
+                            <span class="project-tag">MongoDB</span>
                         </div>
+                        <p data-key="proj5Desc">A complete staff management solution for hotels with a responsive interface and administrative dashboard.</p>
                     </div>
-                    <div class="project-card">
-                        <img src="https://placehold.co/600x400/6366f1/FFFFFF?text=Hotel+Staff+Management" alt="Hotel Staff Management Solution" class="project-img">
-                        <div class="project-content">
-                            <h3>Hotel Staff Management</h3>
-                            <div class="project-tags">
-                                <span class="project-tag">Node.js</span>
-                                <span class="project-tag">Bootstrap</span>
-                                <span class="project-tag">MongoDB</span>
-                            </div>
-                            <p>A complete staff management solution for hotels with responsive interface and administrative dashboard.</p>
-               
-                        </div>
-                    </div>
-                 
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <section id="education"> 
+  <section id="education">
         <div class="container">
             <div class="education">
                 <div class="section-title">
-                    <h2>Education</h2>
+                    <h2 data-key="educationTitle">Education</h2>
                 </div>
                 <div class="timeline">
                     <div class="timeline-item">
                         <span class="timeline-date">09/2018 - 03/2022</span>
                         <div class="timeline-content">
-                            <h3>National Diploma of Applied License in Information Technology</h3>
-                            <p>Higher Institute of Technological Studies of Mahdia</p>
+                            <h3 data-key="edu1Title">National Diploma of Applied License in Information Technology</h3>
+                            <p data-key="edu1School">Higher Institute of Technological Studies of Mahdia</p>
                         </div>
                     </div>
                     <div class="timeline-item">
                         <span class="timeline-date">09/2013 - 06/2018</span>
                         <div class="timeline-content">
-                            <h3>National Baccalaureate Diploma - Mathematics Section</h3>
-                            <p>Mohamed Boudhina High School Hammamet</p>
+                            <h3 data-key="edu2Title">National Baccalaureate Diploma - Mathematics Section</h3>
+                            <p data-key="edu2School">Mohamed Boudhina High School Hammamet</p>
                         </div>
                     </div>
                 </div>
@@ -312,17 +323,18 @@
         </div>
     </section>
 
+
     <section id="contact">
         <div class="container">
             <div class="contact">
                 <div class="section-title">
-                    <h2>Contact Me</h2>
+                    <h2 data-key="contactTitle">Contact Me</h2>
                 </div>
                 <div class="contact-info">
                     <div class="contact-item">
                         <i class="fas fa-phone"></i>
                         <div>
-                            <h3>Phone</h3>
+                            <h3 data-key="contactPhoneTitle">Phone</h3>
                             <p>+216 92 232 243</p>
                         </div>
                     </div>
@@ -336,7 +348,7 @@
                     <div class="contact-item">
                         <i class="fas fa-map-marker-alt"></i>
                         <div>
-                            <h3>Location</h3>
+                            <h3 data-key="contactLocationTitle">Location</h3>
                             <p>Hammamet, Nabeul, Tunisia</p>
                         </div>
                     </div>
@@ -356,10 +368,10 @@
     <footer>
         <div class="container">
             <div class="social-links">
-                <a  target="_blank" href="https://www.linkedin.com/in/khaled-khemissi/"><i class="fab fa-linkedin"></i></a>
-                <a   target="_blank" href="https://github.com/khaled-khemissi"><i class="fab fa-github"></i></a>
+                <a target="_blank" href="https://www.linkedin.com/in/khaled-khemissi/"><i class="fab fa-linkedin"></i></a>
+                <a target="_blank" href="https://github.com/khaled-khemissi"><i class="fab fa-github"></i></a>
             </div>
-            <p>&copy; 2024 Khaled Khemissi. All rights reserved.</p>
+            <p data-key="footerCopyright">&copy; 2024 Khaled Khemissi. All rights reserved.</p>
         </div>
     </footer>
 

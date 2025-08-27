@@ -87,6 +87,7 @@ body {
     font-weight: 500;
     transition: opacity 0.3s;
     position: relative;
+    white-space: nowrap;
 }
 
 .nav-menu a::after {
@@ -110,7 +111,7 @@ body {
     color: white;
     cursor: pointer;
     font-size: 1.2rem;
-    margin-left: 2rem;
+ 
 }
 
 .mobile-menu-btn {
@@ -220,7 +221,6 @@ section.visible {
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
 }
 
-/* Skills with progress bars */
 .skills-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -573,8 +573,23 @@ footer {
 .back-to-top:hover {
     transform: translateY(-5px);
 }
-
-/* Animations */
+.dark-mode .project-content h3 ,.dark-mode .timeline-content h3 , .dark-mode .contact-item a {
+    color: white!important;
+} 
+.lang-btn {
+    margin-left: 10px;
+    cursor: pointer;
+    border: unset;
+    border-radius: 5px;
+    background: unset;
+    filter: brightness(0.5);
+} 
+.lang-btn.active { 
+    filter: brightness(1) !important;
+} 
+.lang-btn img{
+ max-width: 25px;
+} 
 @keyframes fadeInDown {
     from {
         opacity: 0;
@@ -592,11 +607,22 @@ footer {
     }
 }
 
-/* Responsive Design */
 @media (min-width: 768px) {
     .contact-item {
         width: 48%;
     }
+}
+@media (min-width: 769px) and (max-width:1045px){
+
+.logo {
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+}
+.nav-menu li {
+    margin-left: 1.5rem;
+    display: flex;
+}
 }
 
 @media (max-width: 768px) {
@@ -615,6 +641,12 @@ footer {
     
     .nav-menu.active {
         left: 0;
+        height: 100vh;
+        overflow: auto;
+        padding-bottom: 60px;
+    }
+    .theme-toggle{
+        margin: 0 ;
     }
     
     .nav-menu li {
