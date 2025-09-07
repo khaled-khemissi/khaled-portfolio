@@ -90,6 +90,8 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 document.querySelectorAll('.skill-progress').forEach(bar => {
     bar.style.width = '0';
 });
+
+
  const translations = {
     fr: {
         navAbout: "À propos",
@@ -101,8 +103,8 @@ document.querySelectorAll('.skill-progress').forEach(bar => {
         headerName: "Khaled Khemissi",
         headerTitle: "Développeur Web Full Stack",
         aboutTitle: "À propos de moi",
-        aboutText1: "Avec un fort sens des responsabilités, une grande autonomie et un esprit perfectionniste, je mets à profit mon solide bagage pour contribuer efficacement au succès de votre entreprise.",
-        aboutText2: "En tant que développeur web full stack expérimenté, j'ai travaillé sur divers projets allant des applications web personnalisées aux solutions e-commerce.",
+        aboutText1: "Développeur Web Full Stack passionné, spécialisé en Laravel, Symfony, React.js et WordPress. Je conçois et optimise des applications performantes avec intégration d’API, gestion de bases de données et déploiement sur des environnements modernes. Reconnu pour ma rigueur et mon sens du détail, je transforme les besoins clients en solutions digitales fiables et évolutives.",
+        aboutText2: "",
         langArabic: "Arabe",
         langArabicLevel: "Natif",
         langFrench: "Français",
@@ -165,8 +167,8 @@ document.querySelectorAll('.skill-progress').forEach(bar => {
         headerName: "Khaled Khemissi",
         headerTitle: "Full Stack Web Developer",
         aboutTitle: "About Me",
-        aboutText1: "With a strong sense of responsibility, great autonomy, and a perfectionist mindset, I leverage my solid background to effectively contribute to your company's success.",
-        aboutText2: "As an experienced full stack web developer, I have worked on various projects ranging from custom web applications to e-commerce solutions.",
+        aboutText1: "Passionate Full Stack Web Developer specialized in Laravel, Symfony, React.js, and WordPress. I design and optimize high-performance applications with API integration, database management, and deployment in modern environments. Known for precision and attention to detail, I turn client needs into reliable and scalable digital solutions.",
+        aboutText2: "",
         langArabic: "Arabic",
         langArabicLevel: "Native",
         langFrench: "French",
