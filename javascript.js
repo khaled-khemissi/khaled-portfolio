@@ -91,8 +91,15 @@ document.querySelectorAll('.skill-progress').forEach(bar => {
     bar.style.width = '0';
 });
 
-
- const translations = {
+ document.getElementById("downloadCV").addEventListener("click", function() {
+    const link = document.createElement("a");
+    link.href = "Khaled_Khemissi_CV.pdf"; // path to PDF in your repo
+    link.download = "Khaled_Khemissi_CV.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+});
+  const translations = {
     fr: {
         navAbout: "À propos",
         navSkills: "Compétences",

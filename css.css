@@ -601,6 +601,8 @@ footer {
     border-radius: 5px;
     text-decoration: none;
     transition: background 0.3s;
+    background: unset;
+    border: 0;
 }
  
 
