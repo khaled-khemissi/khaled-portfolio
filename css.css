@@ -38,6 +38,11 @@ body {
     line-height: 1.6;
     background-color: var(--light-color);
     transition: background-color 0.3s ease;
+ 
+}
+
+.about ,.project-content p{
+ 
     text-align: justify;
 
 }
