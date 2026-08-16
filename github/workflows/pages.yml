@@ -1,1 +1,80 @@
 
+name: Deploy GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Cache bust CSS and JS
+        run: |
+          VERSION="${GITHUB_SHA::12}"
+
+          python3 - <<'PY'
+          import os
+          import re
+
+          version = os.environ["VERSION"]
+
+          with open("index.html", "r", encoding="utf-8") as f:
+              html = f.read()
+
+          # Add/update version on CSS files
+          html = re.sub(
+              r'(href=["\'][^"\']+\.css)(?:\?v=[^"\']*)?(["\'])',
+              rf'\1?v={version}\2',
+              html
+          )
+
+          # Add/update version on JS files
+          html = re.sub(
+              r'(src=["\'][^"\']+\.js)(?:\?v=[^"\']*)?(["\'])',
+              rf'\1?v={version}\2',
+              html
+          )
+
+          with open("index.html", "w", encoding="utf-8") as f:
+              f.write(html)
+          PY
+
+        env:
+          VERSION: ${{ github.sha }}
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    runs-on: ubuntu-latest
+    needs: build
+
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
