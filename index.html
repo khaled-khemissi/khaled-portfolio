@@ -1,471 +1,888 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Khaled Khemissi - Full Stack Web Developer</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="css.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Khaled Khemissi — Développeur Web Full Stack</title>
+<meta name="description" content="Khaled Khemissi, développeur web full stack à Hammamet, Tunisie. Spécialisé en Laravel, Symfony, React.js, WordPress et PrestaShop.">
 
+<link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <nav class="navbar">
-        <div class="container nav-container">
-            <div class="logo">Khaled Khemissi</div>
-            <ul class="nav-menu">
-                <li><a href="#about" data-key="navAbout">About</a></li>
-                <li><a href="#skills" data-key="navSkills">Skills</a></li>
-                <li><a href="#experience" data-key="navExperience">Experience</a></li>
-                <li><a href="#projects" data-key="navProjects">Projects</a></li>
-                <li><a href="#education" data-key="navEducation">Education</a></li>
-                <li><a href="#contact" data-key="navContact">Contact</a></li>
- 
-                <li>
-                    <button class="theme-toggle" id="themeToggle"><i class="fas fa-moon"></i></button>
-                </li>
-                <li>
-                    <button class="lang-btn active" id="enBtn"><img src="eng.jpg" alt="" srcset=""> </button>
-                    <button class="lang-btn" id="frBtn"><img src="fr.avif" alt="" srcset=""></button>
-                </li>
-            </ul>
-            <button class="mobile-menu-btn" id="mobileMenuBtn">
-                <i class="fas fa-bars"></i>
-            </button>
-        </div>
-    </nav>
 
-    <header>
-        <div class="container hero">
-            <img src="Khaled.jpeg" alt="Khaled Khemissi" class="profile-img">
-            <h1 data-key="headerName">Khaled Khemissi</h1>
-            <p data-key="headerTitle">Full Stack Web Developer</p>
-            <a href="Khaled_Khemissi_CV.pdf" target="_blank" download class="btn-download-cv">
-                <i class="fas fa-download"></i> Download CV
-            </a>
-        </div>
-    </header>
-    <section id="about">
-        <div class="container">
-            <div class="about">
-                <div class="section-title">
-                    <h2 data-key="aboutTitle">About Me</h2>
-                </div>
-                <p data-key="aboutText1">Passionate Full Stack Web Developer specialized in Laravel, Symfony, React.js, and WordPress. I design and optimize high-performance applications with API integration, database management, and deployment in modern environments. Known for precision and attention to detail, I turn client needs into reliable and scalable digital solutions.</p>
-                <!-- <p data-key="aboutText2"></p> -->
+<!-- ============ GRID BACKDROP ============ -->
+<div class="blueprint-grid" aria-hidden="true"></div>
 
-                <div class="languages">
-                    <div class="language-item">
-                        <div class="language-name" data-key="langArabic">Arabic</div>
-                        <div class="language-level" data-key="langArabicLevel">Native</div>
-                    </div>
-                    <div class="language-item">
-                        <div class="language-name" data-key="langFrench">French</div>
-                        <div class="language-level" data-key="langFrenchLevel">Intermediate</div>
-                    </div>
-                    <div class="language-item">
-                        <div class="language-name" data-key="langEnglish">English</div>
-                        <div class="language-level" data-key="langEnglishLevel">Intermediate</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+<!-- ============ SKIP LINK ============ -->
+<a class="skip-link" href="#main">Aller au contenu</a>
 
-    <section id="skills">
-        <div class="container">
-            <div class="skills">
-                <div class="section-title">
-                    <h2 data-key="skillsTitle">Technical Skills</h2>
-                </div>
-                <div class="skills-grid">
-                    <div class="skill-item">
-                        <div class="skill-header">
-                            <i class="fab fa-php"></i>
-                            <h3>PHP</h3>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-value="90"><span class="skill-value">90%</span></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-header">
-                            <i class="fab fa-wordpress"></i>
-                            <h3>WordPress</h3>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-value="85"><span class="skill-value">85%</span></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-header">
-                            <i class="fas fa-shopping-cart"></i>
-                            <h3>PrestaShop</h3>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-value="80"><span class="skill-value">80%</span></div>
-                        </div>
-                    </div>
-    
-                    <div class="skill-item">
-                        <div class="skill-header">
-                            <i class="fab fa-github"></i>
-                            <h3>GitHub</h3>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-value="85"><span class="skill-value">85%</span></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-header">
-                            <i class="fab fa-js"></i>
-                            <h3>JavaScript</h3>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-value="85"><span class="skill-value">85%</span></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-header">
-                            <i class="fab fa-react"></i>
-                            <h3>React.js</h3>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-value="75"><span class="skill-value">75%</span></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-header">
-                            <i class="fab fa-html5"></i>
-                            <h3>HTML5/CSS3</h3>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-value="95"><span class="skill-value">95%</span></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-header">
-                            <i class="fab fa-laravel"></i>
-                            <h3>Laravel</h3>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-value="80"><span class="skill-value">80%</span></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-header">
-                            <i class="fab fa-symfony"></i>
-                            <h3>Symfony</h3>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-value="75"><span class="skill-value">75%</span></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-header">
-                            <i class="fas fa-database"></i>
-                            <h3>SQL/PLSQL</h3>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-value="85"><span class="skill-value">85%</span></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-header">
-                            <i class="fab fa-android"></i>
-                            <h3>Android Studio</h3>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-value="70"><span class="skill-value">70%</span></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-header">
-                            <i class="fab fa-python"></i>
-                            <h3>Django</h3>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-value="65"><span class="skill-value">65%</span></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="experience">
-        <div class="container">
-            <div class="experience">
-                <div class="section-title">
-                    <h2 data-key="experienceTitle">Work Experience</h2>
-                </div>
-                <div class="timeline">
-                    <div class="timeline-item">
-                        <span class="timeline-date">12/2022 - 10/2024</span>
-                        <div class="timeline-content">
-                            <h3 data-key="expJobTitle">Full Stack Web Developer - 3W WIT</h3>
-                            <ul>
-                                <li data-key="exp1">Development of web applications with Symfony and Laravel, integrating custom entities and services for tailored solutions.</li>
-                                <li data-key="exp2">Maintenance and performance optimization to ensure robust and efficient applications.</li>
-                                <li data-key="exp3">Design and management of over 20 projects on WordPress and PrestaShop, including custom themes, plugins, and widgets.</li>
-                                <li data-key="exp4">Creation of dynamic and aesthetic pages with Elementor to enhance user experience.</li>
-                                <li data-key="exp5">Integration of interactive features with jQuery, such as responsive menus and form validation.</li>
-                                <li data-key="exp6">Use of AJAX to optimize website performance and interactivity.</li>
-                                <li data-key="exp7">Mentoring new developers for quick and effective integration into projects.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    
- <section id="projects">
-    <div class="container">
-        <div class="projects">
-            <div class="section-title">
-                <h2 data-key="projectsTitle">Featured Projects</h2>
-            </div>
-            <div class="projects-grid">
-                
-                <div class="project-card">
-                    <img src="vibrance.png" class="project-img" alt="Vibrance Parfum E-Commerce">
-                    <div class="project-content">
-                        <h3 data-key="proj8Title">Vibrance Parfum – E-Commerce Website</h3>
-                        <div class="project-tags">
-                            <span class="project-tag">WordPress</span>
-                            <span class="project-tag">WooCommerce</span>
-                        </div>
-                        <p data-key="proj8Desc">
-                            Elegant and modern e-commerce platform for Vibrance Parfum, a French perfume brand.
-                            Responsive design, easy catalog management, secure online payment, and intuitive navigation.
-                        </p>
-                        <div class="project-links">
-                            <a target="_blank" href="https://vibrance-parfum.com/" class="project-link">
-                                <i class="fas fa-external-link-alt"></i> Live Demo
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <img src="tasteaura.png" class="project-img" alt="TasteAura Landing Page">
-                    <div class="project-content">
-                        <h3 data-key="proj9Title">TasteAura – Landing Page</h3>
-                        <div class="project-tags">
-                            <span class="project-tag">Custom Design</span>
-                            <span class="project-tag">Responsive</span>
-                        </div>
-                        <p data-key="proj9Desc">
-                            Custom landing page for TasteAura, offering an immersive culinary experience.
-                            Fully responsive, fast-loading, and designed from scratch for optimal UX.
-                        </p>
-                        <div class="project-links">
-                            <a target="_blank" href="https://lnkd.in/epyQkMjV" class="project-link">
-                                <i class="fas fa-external-link-alt"></i> Live Demo
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-
-       
-                  <div class="project-card">
-                    <img src="fushia.PNG" class="project-img">
-                    <div class="project-content">
-                        <h3 data-key="proj7Title">Fushia – Custom WordPress & WooCommerce Clothing Store</h3>
-                        <div class="project-tags">
-                            <span class="project-tag">WordPress</span>
-                        </div>
-                        <p data-key="proj7Desc">Custom WordPress & WooCommerce fashion store with a personalized theme and responsive design.</p>
-                        <div class="project-links">
-                            <a target="_blank" href="https://fushiawardrobe.great-site.net/" class="project-link">
-                                <i class="fas fa-external-link-alt"></i> Live Demo
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <img src="eurex.PNG" class="project-img">
-                    <div class="project-content">
-                        <h3 data-key="proj2Title">Developed the Front-End of Eurex Website</h3>
-                        <div class="project-tags">
-                            <span class="project-tag">Html</span>
-                            <span class="project-tag">CSS</span>
-                            <span class="project-tag">JQuery</span>
-                        </div>
-                        <p data-key="proj2Desc">Developed the entire front-end of the Eurex website, creating a responsive and interactive interface.</p>
-                        <div class="project-links">
-                            <a target="_blank" href="https://khaled-khemissi.github.io/eurex/index.html" class="project-link">
-                                <i class="fas fa-external-link-alt"></i> Live Demo
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                 <div class="project-card">
-                    <img src="leaders-immo.PNG" class="project-img">
-                    <div class="project-content">
-                        <h3 data-key="proj3Title">Developed the Front-End of Leaders-Immo Website</h3>
-                        <div class="project-tags">
-                            <span class="project-tag">Html</span>
-                            <span class="project-tag">CSS</span>
-                            <span class="project-tag">JQuery</span>
-                        </div>
-                        <p data-key="proj3Desc">Developed the entire front-end of the Leaders-Immo website, creating a responsive and interactive interface.</p>
-                        <div class="project-links">
-                            <a target="_blank" href="https://khaled-khemissi.github.io/leaders-immo/index.html" class="project-link">
-                                <i class="fas fa-external-link-alt"></i> Live Demo
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <img src="cantarelimmobilier.PNG" class="project-img">
-                    <div class="project-content">
-                        <h3 data-key="proj6Title">Plugin de génération automatique de fichiers XML</h3>
-                        <div class="project-tags">
-                            <span class="project-tag">php</span>
-                            <span class="project-tag">CSS</span>
-                            <span class="project-tag">html</span>
-                        </div>
-                        <p data-key="proj6Desc">Création d’un plugin permettant d’extraire des données spécifiques depuis une base de données et de les transformer en fichiers XML basés sur un modèle prédéfini. Ce plugin facilite l’automatisation des exports, l’échange de données et l’intégration avec des services externes.</p>
-                       
-                    </div>
-                </div>
-
-                 <div class="project-card">
-                    <img src="saudi-arabia-map.PNG" class="project-img">
-                    <div class="project-content">
-                        <h3 data-key="proj1Title">Interactive Map</h3>
-                        <div class="project-tags">
-                            <span class="project-tag">Html</span>
-                            <span class="project-tag">CSS</span>
-                            <span class="project-tag">JQuery</span>
-                        </div>
-                        <p data-key="proj1Desc">A responsive web-based map that lets users explore locations and view details by interacting with them.</p>
-                        <div class="project-links">
-                            <a target="_blank" href="https://khaled-khemissi.github.io/saudi-arabia-map/" class="project-link">
-                                <i class="fas fa-external-link-alt"></i> Live Demo
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-
-                 <div class="project-card">
-                    <img src="https://placehold.co/600x400/3b82f6/FFFFFF?text=Hospital+Appointment+System" class="project-img" alt="Hospital Appointment System">
-                    <div class="project-content">
-                        <h3 data-key="proj4Title">Hospital Appointment System</h3>
-                        <div class="project-tags">
-                            <span class="project-tag">Symfony</span>
-                            <span class="project-tag">Bootstrap</span>
-                            <span class="project-tag">React.js</span>
-                        </div>
-                        <p data-key="proj4Desc">A complete web application for managing appointments in a hospital environment, developed with Symfony and React.js.</p>
-                    </div>
-                </div>
- 
-                <div class="project-card">
-                    <img src="https://placehold.co/600x400/6366f1/FFFFFF?text=Hotel+Staff+Management" class="project-img" alt="Hotel Staff Management">
-                    <div class="project-content">
-                        <h3 data-key="proj5Title">Hotel Staff Management</h3>
-                        <div class="project-tags">
-                            <span class="project-tag">Node.js</span>
-                            <span class="project-tag">Bootstrap</span>
-                            <span class="project-tag">MongoDB</span>
-                        </div>
-                        <p data-key="proj5Desc">A complete staff management solution for hotels with a responsive interface and administrative dashboard.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-  <section id="education">
-        <div class="container">
-            <div class="education">
-                <div class="section-title">
-                    <h2 data-key="educationTitle">Education</h2>
-                </div>
-                <div class="timeline">
-                    <div class="timeline-item">
-                        <span class="timeline-date">09/2018 - 03/2022</span>
-                        <div class="timeline-content">
-                            <h3 data-key="edu1Title">National Diploma of Applied License in Information Technology</h3>
-                            <p data-key="edu1School">Higher Institute of Technological Studies of Mahdia</p>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <span class="timeline-date">09/2013 - 06/2018</span>
-                        <div class="timeline-content">
-                            <h3 data-key="edu2Title">National Baccalaureate Diploma - Mathematics Section</h3>
-                            <p data-key="edu2School">Mohamed Boudhina High School Hammamet</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <section id="contact">
-        <div class="container">
-            <div class="contact">
-                <div class="section-title">
-                    <h2 data-key="contactTitle">Contact Me</h2>
-                </div>
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <i class="fas fa-phone"></i>
-                        <div>
-                            <h3 data-key="contactPhoneTitle">Phone</h3>
-                            <p>+216 92 232 243</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <div>
-                            <h3>Email</h3>
-                            <p>khaledkhemissi@gmail.com</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <div>
-                            <h3 data-key="contactLocationTitle">Location</h3>
-                            <p>Hammamet, Nabeul, Tunisia</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fab fa-linkedin"></i>
-                        <div>
-                            <h3>LinkedIn</h3>
-                            <p><a  target="_blank" href="https://www.linkedin.com/in/khaled-khemissi/">khaled-khemissi</a></p>
-                        </div>
-                    </div>
-                </div>
- 
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        <div class="container">
-            <div class="social-links">
-                <a target="_blank" href="https://www.linkedin.com/in/khaled-khemissi/"><i class="fab fa-linkedin"></i></a>
-                <a target="_blank" href="https://github.com/khaled-khemissi"><i class="fab fa-github"></i></a>
-            </div>
-            <p data-key="footerCopyright">&copy; 2024 Khaled Khemissi. All rights reserved.</p>
-        </div>
-    </footer>
-
-    <a href="#" class="back-to-top" id="backToTop">
-        <i class="fas fa-arrow-up"></i>
+<!-- ============ NAV ============ -->
+<header class="site-header">
+  <div class="header-inner">
+    <a href="#top" class="brand">
+      <span class="brand-text">Khaled Khemissi</span>
     </a>
 
-    <script type="text/javascript" src="javascript.js"></script>
+    <nav class="main-nav" id="main-nav">
+      <a href="#about">Profil</a>
+      <a href="#stack">Stack</a>
+      <a href="#experience">Expérience</a>
+      <a href="#work">Réalisations</a>
+      <a href="#education">Formation</a>
+      <a href="#contact" class="nav-cta">Contact</a>
+    </nav>
 
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="main-nav" aria-label="Ouvrir le menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="top">
+    <div class="sheet-label">
+      <span class="sheet-sep">/</span><span>PROFIL</span>
+    </div>
+
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow">Développeur Web Full Stack — Hammamet, Tunisie</p>
+        <h1 class="hero-title">
+          Je conçois des applications
+          <span class="hero-title-accent">robustes, </span>
+          et des interfaces
+          <span class="hero-title-accent">soignées.</span>
+        </h1>
+        <p class="hero-desc">
+          Depuis 2022, je construis des applications web sur mesure avec Symfony et Laravel,
+          et je façonne des expériences e‑commerce et vitrines performantes sur WordPress et
+          PrestaShop. Rigueur d'architecte côté serveur, sens du détail côté interface.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#work" class="btn btn-primary">Voir les réalisations</a>
+          <a href="assets/khaled-khemissi-cv.pdf" class="btn btn-ghost" download>Télécharger le CV ↓</a>
+        </div>
+
+        <dl class="hero-dims" aria-label="Chiffres clés">
+          <div class="dim">
+            <dt>Projets WordPress / PrestaShop</dt>
+            <dd>20+</dd>
+          </div>
+          <div class="dim">
+            <dt>En activité professionnelle depuis</dt>
+            <dd>2019</dd>
+          </div>
+          <div class="dim">
+            <dt>Langues de travail</dt>
+            <dd>FR · EN · AR</dd>
+          </div>
+        </dl>
+      </div>
+
+      <div class="hero-figure">
+        <div class="portrait-frame">
+          <img src="assets/images/profile.jpeg" alt="Portrait de Khaled Khemissi" class="portrait-img" width="360" height="360">
+          <svg class="frame-marks" viewBox="0 0 360 360" aria-hidden="true">
+            <path d="M8 30 V8 H30" fill="none" stroke="currentColor" stroke-width="2"/>
+            <path d="M330 8 H352 V30" fill="none" stroke="currentColor" stroke-width="2"/>
+            <path d="M352 330 V352 H330" fill="none" stroke="currentColor" stroke-width="2"/>
+            <path d="M30 352 H8 V330" fill="none" stroke="currentColor" stroke-width="2"/>
+          </svg>
+          <span class="portrait-tag">DÉV. FULLSTACK</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="section" id="about">
+    <div class="section-inner">
+      <div class="section-head">
+        <h2>Profil</h2>
+      </div>
+      <div class="about-grid">
+        <p class="about-text">
+          Développeur web full stack passionné, spécialisé en Laravel, Symfony, React.js et
+          WordPress. Je conçois et optimise des applications performantes avec intégration
+          d'API, gestion de bases de données et déploiement sur des environnements modernes.
+          Reconnu pour ma rigueur et mon sens du détail, je transforme les besoins clients en
+          solutions digitales fiables et évolutives.
+        </p>
+        <ul class="about-meta">
+          <li><span>Localisation</span><strong>Hammamet, Nabeul — Tunisie</strong></li>
+          <li><span>Téléphone</span><strong><a href="tel:+21692232243">+216 92 232 243</a></strong></li>
+          <li><span>E‑mail</span><strong><a href="mailto:khaledkhemissi0@gmail.com">khaledkhemissi0@gmail.com</a></strong></li>
+          <li><span>LinkedIn</span><strong><a href="https://linkedin.com/in/khaled-khemissi" target="_blank" rel="noopener">linkedin.com/in/khaled&#8209;khemissi</a></strong></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ STACK BLUEPRINT (signature element) ============ -->
+  <section class="section section-alt" id="stack">
+    <div class="section-inner">
+      <div class="section-head">
+        <h2>Schéma de la stack</h2>
+        <p class="section-sub">Quatre couches, du rendu à la base de données. Survolez ou touchez une couche pour le détail.</p>
+      </div>
+
+      <div class="stack-diagram" id="stackDiagram">
+
+        <div class="stack-layer" data-layer="frontend" tabindex="0">
+          <div class="layer-head">
+            <span class="layer-index">01</span>
+            <h3>Interface &amp; interactivité</h3>
+          </div>
+          <ul class="layer-tools">
+            <li>React.js</li><li>JavaScript</li><li>jQuery</li><li>AJAX</li><li>HTML5 / CSS3</li><li>Bootstrap</li>
+          </ul>
+        </div>
+
+        <div class="stack-layer" data-layer="backend" tabindex="0">
+          <div class="layer-head">
+            <span class="layer-index">02</span>
+            <h3>Logique applicative</h3>
+          </div>
+          <ul class="layer-tools">
+            <li>Laravel</li><li>Symfony</li><li>PHP</li><li>Node.js</li><li>Django</li>
+          </ul>
+        </div>
+
+        <div class="stack-layer" data-layer="cms" tabindex="0">
+          <div class="layer-head">
+            <span class="layer-index">03</span>
+            <h3>CMS &amp; e‑commerce</h3>
+          </div>
+          <ul class="layer-tools">
+            <li>WordPress</li><li>PrestaShop</li><li>Elementor</li><li>Thèmes &amp; plugins sur mesure</li>
+          </ul>
+        </div>
+
+        <div class="stack-layer" data-layer="data" tabindex="0">
+          <div class="layer-head">
+            <span class="layer-index">04</span>
+            <h3>Données &amp; outils</h3>
+          </div>
+          <ul class="layer-tools">
+            <li>SQL</li><li>PL/SQL</li><li>RESTful services</li><li>Git</li><li>Grunt</li><li>Android Studio</li>
+          </ul>
+        </div>
+
+        <!-- <svg class="stack-connector" viewBox="0 0 4 400" preserveAspectRatio="none" aria-hidden="true">
+          <line x1="2" y1="0" x2="2" y2="400" stroke="currentColor" stroke-width="1" stroke-dasharray="2 6"/>
+        </svg> -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ EXPERIENCE ============ -->
+  <section class="section" id="experience">
+    <div class="section-inner">
+      <div class="section-head">
+        <h2>Expérience</h2>
+      </div>
+
+      <ol class="timeline">
+
+        <li class="tl-item">
+          <div class="tl-marker" aria-hidden="true"></div>
+          <div class="tl-content">
+            <div class="tl-top">
+              <h3>Développeur web full stack</h3>
+              <span class="tl-date">12/2022 — 10/2024</span>
+            </div>
+            <p class="tl-org">3w wit · Nabeul, Tunisie</p>
+            <ul class="tl-list">
+              <li>Développement d'applications web avec Symfony et Laravel, en intégrant des entités et services personnalisés pour des solutions sur mesure.</li>
+              <li>Conception et gestion de plus de 20 projets sur WordPress et PrestaShop, incluant thèmes, plugins et widgets sur mesure.</li>
+              <li>Création de pages dynamiques avec Elementor et intégration de fonctionnalités interactives avec jQuery et AJAX.</li>
+              <li>Maintenance technique, optimisation des performances et mise à jour des sites pour garantir sécurité et stabilité.</li>
+              <li>Formation des nouveaux développeurs pour une intégration rapide et efficace.</li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="tl-item">
+          <div class="tl-marker" aria-hidden="true"></div>
+          <div class="tl-content">
+            <div class="tl-top">
+              <h3>Stage de perfectionnement</h3>
+              <span class="tl-date">01/2022 — 02/2022</span>
+            </div>
+            <p class="tl-org">Booster BC · Hammamet, Tunisie</p>
+            <ul class="tl-list">
+              <li>Conception et développement d'une solution de gestion du personnel destinée aux hôtels.</li>
+              <li>Développement backend avec Node.js.</li>
+              <li>Création d'interfaces utilisateur modernes et responsives avec Bootstrap.</li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="tl-item">
+          <div class="tl-marker" aria-hidden="true"></div>
+          <div class="tl-content">
+            <div class="tl-top">
+              <h3>Stage de fin d'étude</h3>
+              <span class="tl-date">02/2021 — 06/2021</span>
+            </div>
+            <p class="tl-org">Hammamet Informatique Services · Hammamet, Tunisie</p>
+            <ul class="tl-list">
+              <li>Conception et développement d'une application de gestion des rendez‑vous hospitaliers, avec Symfony, Bootstrap et React.js.</li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="tl-item">
+          <div class="tl-marker" aria-hidden="true"></div>
+          <div class="tl-content">
+            <div class="tl-top">
+              <h3>Stage d'initiation</h3>
+              <span class="tl-date">01/2019 — 02/2019</span>
+            </div>
+            <p class="tl-org">Tunisie Telecom · Hammamet, Tunisie</p>
+            <ul class="tl-list">
+              <li>Découverte du milieu professionnel.</li>
+              <li>Exploration de la structure hiérarchique du réseau de lignes d'abonnés (RLA) de Tunisie Télécom.</li>
+            </ul>
+          </div>
+        </li>
+
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============ WORK ============ -->
+  <section class="section section-alt" id="work">
+    <div class="section-inner">
+      <div class="section-head">
+        <h2>Réalisations</h2>
+      </div>
+
+      <div class="work-grid">
+
+        <article class="work-card">
+          <div class="work-img" aria-hidden="true">
+            <img src="assets/project/work-CoffeHome.PNG" alt="Coffe Home–   Website"  >
+          </div>
+          <span class="work-kicker">Laravel . React</span>
+          <h3>Site Web pour un Coffee Shop </h3>
+          <p> Modern and responsive coffee shop website built from scratch with Laravel and React. Custom UI/UX design, branding, logo creation, and a personalized color palette for a unique and welcoming coffee shop identity.</p>
+          <!-- <span class="work-tag">Stage de fin d'étude · 2021</span> -->
+        </article>
+        <article class="work-card">
+          <div class="work-img" aria-hidden="true">
+            <img src="assets/project/work-vibrance.png" alt="Vibrance Parfum – E-Commerce Website"  >
+          </div>
+          <span class="work-kicker">WordPress . WooCommerce</span>
+          <h3>Vibrance Parfum – E-Commerce Website</h3>
+          <p> Elegant and modern e-commerce platform for Vibrance Parfum, a French perfume brand. Responsive design, easy catalog management, secure online payment, and intuitive navigation. </p>
+          <!-- <span class="work-tag">Stage de fin d'étude · 2021</span> -->
+        </article>
+ 
+        <article class="work-card">
+          <div class="work-img" aria-hidden="true">
+            <img src="assets/project/work-tasteaura.png" alt="TasteAura –   Website"  >
+          </div>
+          <span class="work-kicker">WordPress . CSS . JQuery</span>
+          <h3>TasteAura – Landing Page</h3>
+          <p> Custom landing page for TasteAura, offering an immersive culinary experience. Fully responsive, fast-loading, and designed from scratch for optimal UX. </p>
+        </article>
+
+        <article class="work-card">
+          <div class="work-img" aria-hidden="true">
+            <img src="assets/project/work-fushia.png" alt="Fushia –   Website"  >
+          </div>
+          <span class="work-kicker">WordPress . WooCommerce . CSS . JQuery</span>
+          <h3>Fushia – Custom WordPress & WooCommerce Clothing Store</h3>
+          <p>  Custom WordPress & WooCommerce fashion store with a personalized theme and responsive design. </p>
+        </article>
+ 
+        <article class="work-card">
+          <div class="work-img" aria-hidden="true">
+            <img src="assets/project/work-eurex.png" alt="eurex –   Website"  >
+          </div>
+          <span class="work-kicker">   HTML  . CSS . JQuery</span>
+          <h3> Developed the Front-End of Eurex Website</h3>
+          <p> Developed the entire front-end of the Eurex website, creating a responsive and interactive interface. </p>
+          <span class="work-tag"><a href='https://khaled-khemissi.github.io/eurex/index.html' target='_blank' rel='noopener noreferrer'>Voir le projet</a></span>
+
+        </article>
+
+        <article class="work-card">
+          <div class="work-img" aria-hidden="true">
+            <img src="assets/project/work-leaders-immo.png" alt="Leaders Immo –   Website"  >
+          </div>
+          <span class="work-kicker">   HTML  . CSS . JQuery</span>
+          <h3> Developed the Front-End of Leaders-Immo  Website</h3>
+          <p> Developed the entire front-end of the Leaders-Immo website, creating a responsive and interactive interface. </p>
+          <span class="work-tag"><a href='https://khaled-khemissi.github.io/leaders-immo/index.html' target='_blank' rel='noopener noreferrer'>Voir le projet</a></span>
+
+        </article>
+
+        <article class="work-card">
+          <div class="work-img" aria-hidden="true">
+            <img src="assets/project/work-cantarelimmobilier.png" alt="Cantarel Immobilier –   Website"  >
+          </div>
+          <span class="work-kicker">   HTML  . CSS . php </span>
+          <h3> Plugin de génération automatique de fichiers XML </h3>
+          <p>Création d’un plugin permettant d’extraire des données spécifiques depuis une base de données et de les transformer en fichiers XML basés sur un modèle prédéfini. Ce plugin facilite l’automatisation des exports, l’échange de données et l’intégration avec des services externes.</p>
+
+        </article>
+ 
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============ EDUCATION + LANGUAGES ============ -->
+  <section class="section" id="education">
+    <div class="section-inner two-col">
+
+      <div>
+        <div class="section-head">
+          <h2>Formation</h2>
+        </div>
+        <ul class="edu-list">
+          <li>
+            <div class="edu-top">
+              <h3>Diplôme National de Licence Appliquée en Technologie de l'Informatique</h3>
+              <span class="tl-date">09/2018 — 03/2022</span>
+            </div>
+            <p class="tl-org">Institut Supérieur des Études Technologiques de Mahdia · Mahdia, Tunisie</p>
+          </li>
+          <li>
+            <div class="edu-top">
+              <h3>Diplôme National du Baccalauréat, Section Mathématiques</h3>
+              <span class="tl-date">09/2013 — 06/2018</span>
+            </div>
+            <p class="tl-org">Lycée Mohamed Boudhina · Hammamet, Tunisie</p>
+          </li>
+        </ul>
+      </div>
+
+      <div>
+        <div class="section-head">
+          <h2>Langues</h2>
+        </div>
+        <ul class="lang-list">
+          <li>
+            <div class="lang-top"><span>Arabe</span><span class="lang-level">Langue maternelle</span></div>
+            <div class="lang-bar"><div class="lang-fill" style="--fill:100%"></div></div>
+          </li>
+          <li>
+            <div class="lang-top"><span>Français</span><span class="lang-level">Avancé</span></div>
+            <div class="lang-bar"><div class="lang-fill" style="--fill:80%"></div></div>
+          </li>
+          <li>
+            <div class="lang-top"><span>Anglais</span><span class="lang-level">Professionnel</span></div>
+            <div class="lang-bar"><div class="lang-fill" style="--fill:80%"></div></div>
+          </li>
+        </ul>
+
+        <div class="interests">
+          <span class="fig-tag fig-tag-inline">Centres d'intérêt</span>
+          <div class="interest-tags">
+            <span>⚽ Football</span>
+            <span>📖 Lecture</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="section section-cta" id="contact">
+    <div class="section-inner">
+      <div class="sheet-label sheet-label-light">
+        <span>FEUILLE02</span><span class="sheet-sep">/</span><span>CONTACT</span>
+      </div>
+      <h2 class="cta-title">Un projet à construire?</h2>
+      <p class="cta-desc">Application métier, refonte WordPress ou boutique PrestaShop : je réponds sous 24 à 48h.</p>
+
+      <div class="contact-grid">
+        <a class="contact-card" href="mailto:khaledkhemissi0@gmail.com">
+          <span class="contact-label">E‑mail</span>
+          <span class="contact-value">khaledkhemissi0@gmail.com</span>
+        </a>
+        <a class="contact-card" href="tel:+21692232243">
+          <span class="contact-label">Téléphone</span>
+          <span class="contact-value">+216 92 232 243</span>
+        </a>
+        <a class="contact-card" href="https://linkedin.com/in/khaled-khemissi" target="_blank" rel="noopener">
+          <span class="contact-label">LinkedIn</span>
+          <span class="contact-value">linkedin.com/in/khaled&#8209;khemissi</span>
+        </a>
+        <a class="contact-card" href="https://khaled-khemissi.github.io/khaled-portfolio" target="_blank" rel="noopener">
+          <span class="contact-label">Portfolio</span>
+          <span class="contact-value">khaled&#8209;khemissi.github.io</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <span>© <span id="year"></span> Khaled Khemissi — Hammamet, Tunisie</span>
+    <span class="footer-sep">·</span>
+    <span>Conçu et codé à la main</span>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Khaled Khemissi — Développeur Web Full Stack</title>
+<meta name="description" content="Khaled Khemissi, développeur web full stack à Hammamet, Tunisie. Spécialisé en Laravel, Symfony, React.js, WordPress et PrestaShop.">
+
+<link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ============ GRID BACKDROP ============ -->
+<div class="blueprint-grid" aria-hidden="true"></div>
+
+<!-- ============ SKIP LINK ============ -->
+<a class="skip-link" href="#main">Aller au contenu</a>
+
+<!-- ============ NAV ============ -->
+<header class="site-header">
+  <div class="header-inner">
+    <a href="#top" class="brand">
+      <span class="brand-text">Khaled Khemissi</span>
+    </a>
+
+    <nav class="main-nav" id="main-nav">
+      <a href="#about">Profil</a>
+      <a href="#stack">Stack</a>
+      <a href="#experience">Expérience</a>
+      <a href="#work">Réalisations</a>
+      <a href="#education">Formation</a>
+      <a href="#contact" class="nav-cta">Contact</a>
+    </nav>
+
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="main-nav" aria-label="Ouvrir le menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="top">
+    <div class="sheet-label">
+      <span class="sheet-sep">/</span><span>PROFIL</span>
+    </div>
+
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow">Développeur Web Full Stack — Hammamet, Tunisie</p>
+        <h1 class="hero-title">
+          Je conçois des applications
+          <span class="hero-title-accent">robustes, </span>
+          et des interfaces
+          <span class="hero-title-accent">soignées.</span>
+        </h1>
+        <p class="hero-desc">
+          Depuis 2022, je construis des applications web sur mesure avec Symfony et Laravel,
+          et je façonne des expériences e‑commerce et vitrines performantes sur WordPress et
+          PrestaShop. Rigueur d'architecte côté serveur, sens du détail côté interface.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#work" class="btn btn-primary">Voir les réalisations</a>
+          <a href="assets/khaled-khemissi-cv.pdf" class="btn btn-ghost" download>Télécharger le CV ↓</a>
+        </div>
+
+        <dl class="hero-dims" aria-label="Chiffres clés">
+          <div class="dim">
+            <dt>Projets WordPress / PrestaShop</dt>
+            <dd>20+</dd>
+          </div>
+          <div class="dim">
+            <dt>En activité professionnelle depuis</dt>
+            <dd>2019</dd>
+          </div>
+          <div class="dim">
+            <dt>Langues de travail</dt>
+            <dd>FR · EN · AR</dd>
+          </div>
+        </dl>
+      </div>
+
+      <div class="hero-figure">
+        <div class="portrait-frame">
+          <img src="assets/images/profile.jpeg" alt="Portrait de Khaled Khemissi" class="portrait-img" width="360" height="360">
+          <svg class="frame-marks" viewBox="0 0 360 360" aria-hidden="true">
+            <path d="M8 30 V8 H30" fill="none" stroke="currentColor" stroke-width="2"/>
+            <path d="M330 8 H352 V30" fill="none" stroke="currentColor" stroke-width="2"/>
+            <path d="M352 330 V352 H330" fill="none" stroke="currentColor" stroke-width="2"/>
+            <path d="M30 352 H8 V330" fill="none" stroke="currentColor" stroke-width="2"/>
+          </svg>
+          <span class="portrait-tag">DÉV. FULLSTACK</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="section" id="about">
+    <div class="section-inner">
+      <div class="section-head">
+        <h2>Profil</h2>
+      </div>
+      <div class="about-grid">
+        <p class="about-text">
+          Développeur web full stack passionné, spécialisé en Laravel, Symfony, React.js et
+          WordPress. Je conçois et optimise des applications performantes avec intégration
+          d'API, gestion de bases de données et déploiement sur des environnements modernes.
+          Reconnu pour ma rigueur et mon sens du détail, je transforme les besoins clients en
+          solutions digitales fiables et évolutives.
+        </p>
+        <ul class="about-meta">
+          <li><span>Localisation</span><strong>Hammamet, Nabeul — Tunisie</strong></li>
+          <li><span>Téléphone</span><strong><a href="tel:+21692232243">+216 92 232 243</a></strong></li>
+          <li><span>E‑mail</span><strong><a href="mailto:khaledkhemissi0@gmail.com">khaledkhemissi0@gmail.com</a></strong></li>
+          <li><span>LinkedIn</span><strong><a href="https://linkedin.com/in/khaled-khemissi" target="_blank" rel="noopener">linkedin.com/in/khaled&#8209;khemissi</a></strong></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ STACK BLUEPRINT (signature element) ============ -->
+  <section class="section section-alt" id="stack">
+    <div class="section-inner">
+      <div class="section-head">
+        <h2>Schéma de la stack</h2>
+        <p class="section-sub">Quatre couches, du rendu à la base de données. Survolez ou touchez une couche pour le détail.</p>
+      </div>
+
+      <div class="stack-diagram" id="stackDiagram">
+
+        <div class="stack-layer" data-layer="frontend" tabindex="0">
+          <div class="layer-head">
+            <span class="layer-index">01</span>
+            <h3>Interface &amp; interactivité</h3>
+          </div>
+          <ul class="layer-tools">
+            <li>React.js</li><li>JavaScript</li><li>jQuery</li><li>AJAX</li><li>HTML5 / CSS3</li><li>Bootstrap</li>
+          </ul>
+        </div>
+
+        <div class="stack-layer" data-layer="backend" tabindex="0">
+          <div class="layer-head">
+            <span class="layer-index">02</span>
+            <h3>Logique applicative</h3>
+          </div>
+          <ul class="layer-tools">
+            <li>Laravel</li><li>Symfony</li><li>PHP</li><li>Node.js</li><li>Django</li>
+          </ul>
+        </div>
+
+        <div class="stack-layer" data-layer="cms" tabindex="0">
+          <div class="layer-head">
+            <span class="layer-index">03</span>
+            <h3>CMS &amp; e‑commerce</h3>
+          </div>
+          <ul class="layer-tools">
+            <li>WordPress</li><li>PrestaShop</li><li>Elementor</li><li>Thèmes &amp; plugins sur mesure</li>
+          </ul>
+        </div>
+
+        <div class="stack-layer" data-layer="data" tabindex="0">
+          <div class="layer-head">
+            <span class="layer-index">04</span>
+            <h3>Données &amp; outils</h3>
+          </div>
+          <ul class="layer-tools">
+            <li>SQL</li><li>PL/SQL</li><li>RESTful services</li><li>Git</li><li>Grunt</li><li>Android Studio</li>
+          </ul>
+        </div>
+
+        <!-- <svg class="stack-connector" viewBox="0 0 4 400" preserveAspectRatio="none" aria-hidden="true">
+          <line x1="2" y1="0" x2="2" y2="400" stroke="currentColor" stroke-width="1" stroke-dasharray="2 6"/>
+        </svg> -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ EXPERIENCE ============ -->
+  <section class="section" id="experience">
+    <div class="section-inner">
+      <div class="section-head">
+        <h2>Expérience</h2>
+      </div>
+
+      <ol class="timeline">
+
+        <li class="tl-item">
+          <div class="tl-marker" aria-hidden="true"></div>
+          <div class="tl-content">
+            <div class="tl-top">
+              <h3>Développeur web full stack</h3>
+              <span class="tl-date">12/2022 — 10/2024</span>
+            </div>
+            <p class="tl-org">3w wit · Nabeul, Tunisie</p>
+            <ul class="tl-list">
+              <li>Développement d'applications web avec Symfony et Laravel, en intégrant des entités et services personnalisés pour des solutions sur mesure.</li>
+              <li>Conception et gestion de plus de 20 projets sur WordPress et PrestaShop, incluant thèmes, plugins et widgets sur mesure.</li>
+              <li>Création de pages dynamiques avec Elementor et intégration de fonctionnalités interactives avec jQuery et AJAX.</li>
+              <li>Maintenance technique, optimisation des performances et mise à jour des sites pour garantir sécurité et stabilité.</li>
+              <li>Formation des nouveaux développeurs pour une intégration rapide et efficace.</li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="tl-item">
+          <div class="tl-marker" aria-hidden="true"></div>
+          <div class="tl-content">
+            <div class="tl-top">
+              <h3>Stage de perfectionnement</h3>
+              <span class="tl-date">01/2022 — 02/2022</span>
+            </div>
+            <p class="tl-org">Booster BC · Hammamet, Tunisie</p>
+            <ul class="tl-list">
+              <li>Conception et développement d'une solution de gestion du personnel destinée aux hôtels.</li>
+              <li>Développement backend avec Node.js.</li>
+              <li>Création d'interfaces utilisateur modernes et responsives avec Bootstrap.</li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="tl-item">
+          <div class="tl-marker" aria-hidden="true"></div>
+          <div class="tl-content">
+            <div class="tl-top">
+              <h3>Stage de fin d'étude</h3>
+              <span class="tl-date">02/2021 — 06/2021</span>
+            </div>
+            <p class="tl-org">Hammamet Informatique Services · Hammamet, Tunisie</p>
+            <ul class="tl-list">
+              <li>Conception et développement d'une application de gestion des rendez‑vous hospitaliers, avec Symfony, Bootstrap et React.js.</li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="tl-item">
+          <div class="tl-marker" aria-hidden="true"></div>
+          <div class="tl-content">
+            <div class="tl-top">
+              <h3>Stage d'initiation</h3>
+              <span class="tl-date">01/2019 — 02/2019</span>
+            </div>
+            <p class="tl-org">Tunisie Telecom · Hammamet, Tunisie</p>
+            <ul class="tl-list">
+              <li>Découverte du milieu professionnel.</li>
+              <li>Exploration de la structure hiérarchique du réseau de lignes d'abonnés (RLA) de Tunisie Télécom.</li>
+            </ul>
+          </div>
+        </li>
+
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============ WORK ============ -->
+  <section class="section section-alt" id="work">
+    <div class="section-inner">
+      <div class="section-head">
+        <h2>Réalisations</h2>
+      </div>
+
+      <div class="work-grid">
+
+        <article class="work-card">
+          <div class="work-img" aria-hidden="true">
+            <img src="assets/project/work-CoffeHome.PNG" alt="Coffe Home–   Website"  >
+          </div>
+          <span class="work-kicker">Laravel . React</span>
+          <h3>Site Web pour un Coffee Shop </h3>
+          <p> Modern and responsive coffee shop website built from scratch with Laravel and React. Custom UI/UX design, branding, logo creation, and a personalized color palette for a unique and welcoming coffee shop identity.</p>
+          <!-- <span class="work-tag">Stage de fin d'étude · 2021</span> -->
+        </article>
+        <article class="work-card">
+          <div class="work-img" aria-hidden="true">
+            <img src="assets/project/work-vibrance.png" alt="Vibrance Parfum – E-Commerce Website"  >
+          </div>
+          <span class="work-kicker">WordPress . WooCommerce</span>
+          <h3>Vibrance Parfum – E-Commerce Website</h3>
+          <p> Elegant and modern e-commerce platform for Vibrance Parfum, a French perfume brand. Responsive design, easy catalog management, secure online payment, and intuitive navigation. </p>
+          <!-- <span class="work-tag">Stage de fin d'étude · 2021</span> -->
+        </article>
+ 
+        <article class="work-card">
+          <div class="work-img" aria-hidden="true">
+            <img src="assets/project/work-tasteaura.png" alt="TasteAura –   Website"  >
+          </div>
+          <span class="work-kicker">WordPress . CSS . JQuery</span>
+          <h3>TasteAura – Landing Page</h3>
+          <p> Custom landing page for TasteAura, offering an immersive culinary experience. Fully responsive, fast-loading, and designed from scratch for optimal UX. </p>
+        </article>
+
+        <article class="work-card">
+          <div class="work-img" aria-hidden="true">
+            <img src="assets/project/work-fushia.png" alt="Fushia –   Website"  >
+          </div>
+          <span class="work-kicker">WordPress . WooCommerce . CSS . JQuery</span>
+          <h3>Fushia – Custom WordPress & WooCommerce Clothing Store</h3>
+          <p>  Custom WordPress & WooCommerce fashion store with a personalized theme and responsive design. </p>
+        </article>
+ 
+        <article class="work-card">
+          <div class="work-img" aria-hidden="true">
+            <img src="assets/project/work-eurex.png" alt="eurex –   Website"  >
+          </div>
+          <span class="work-kicker">   HTML  . CSS . JQuery</span>
+          <h3> Developed the Front-End of Eurex Website</h3>
+          <p> Developed the entire front-end of the Eurex website, creating a responsive and interactive interface. </p>
+          <span class="work-tag"><a href='https://khaled-khemissi.github.io/eurex/index.html' target='_blank' rel='noopener noreferrer'>Voir le projet</a></span>
+
+        </article>
+
+        <article class="work-card">
+          <div class="work-img" aria-hidden="true">
+            <img src="assets/project/work-leaders-immo.png" alt="Leaders Immo –   Website"  >
+          </div>
+          <span class="work-kicker">   HTML  . CSS . JQuery</span>
+          <h3> Developed the Front-End of Leaders-Immo  Website</h3>
+          <p> Developed the entire front-end of the Leaders-Immo website, creating a responsive and interactive interface. </p>
+          <span class="work-tag"><a href='https://khaled-khemissi.github.io/leaders-immo/index.html' target='_blank' rel='noopener noreferrer'>Voir le projet</a></span>
+
+        </article>
+
+        <article class="work-card">
+          <div class="work-img" aria-hidden="true">
+            <img src="assets/project/work-cantarelimmobilier.png" alt="Cantarel Immobilier –   Website"  >
+          </div>
+          <span class="work-kicker">   HTML  . CSS . php </span>
+          <h3> Plugin de génération automatique de fichiers XML </h3>
+          <p>Création d’un plugin permettant d’extraire des données spécifiques depuis une base de données et de les transformer en fichiers XML basés sur un modèle prédéfini. Ce plugin facilite l’automatisation des exports, l’échange de données et l’intégration avec des services externes.</p>
+
+        </article>
+ 
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============ EDUCATION + LANGUAGES ============ -->
+  <section class="section" id="education">
+    <div class="section-inner two-col">
+
+      <div>
+        <div class="section-head">
+          <h2>Formation</h2>
+        </div>
+        <ul class="edu-list">
+          <li>
+            <div class="edu-top">
+              <h3>Diplôme National de Licence Appliquée en Technologie de l'Informatique</h3>
+              <span class="tl-date">09/2018 — 03/2022</span>
+            </div>
+            <p class="tl-org">Institut Supérieur des Études Technologiques de Mahdia · Mahdia, Tunisie</p>
+          </li>
+          <li>
+            <div class="edu-top">
+              <h3>Diplôme National du Baccalauréat, Section Mathématiques</h3>
+              <span class="tl-date">09/2013 — 06/2018</span>
+            </div>
+            <p class="tl-org">Lycée Mohamed Boudhina · Hammamet, Tunisie</p>
+          </li>
+        </ul>
+      </div>
+
+      <div>
+        <div class="section-head">
+          <h2>Langues</h2>
+        </div>
+        <ul class="lang-list">
+          <li>
+            <div class="lang-top"><span>Arabe</span><span class="lang-level">Langue maternelle</span></div>
+            <div class="lang-bar"><div class="lang-fill" style="--fill:100%"></div></div>
+          </li>
+          <li>
+            <div class="lang-top"><span>Français</span><span class="lang-level">Avancé</span></div>
+            <div class="lang-bar"><div class="lang-fill" style="--fill:80%"></div></div>
+          </li>
+          <li>
+            <div class="lang-top"><span>Anglais</span><span class="lang-level">Professionnel</span></div>
+            <div class="lang-bar"><div class="lang-fill" style="--fill:80%"></div></div>
+          </li>
+        </ul>
+
+        <div class="interests">
+          <span class="fig-tag fig-tag-inline">Centres d'intérêt</span>
+          <div class="interest-tags">
+            <span>⚽ Football</span>
+            <span>📖 Lecture</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="section section-cta" id="contact">
+    <div class="section-inner">
+      <div class="sheet-label sheet-label-light">
+        <span>FEUILLE02</span><span class="sheet-sep">/</span><span>CONTACT</span>
+      </div>
+      <h2 class="cta-title">Un projet à construire?</h2>
+      <p class="cta-desc">Application métier, refonte WordPress ou boutique PrestaShop : je réponds sous 24 à 48h.</p>
+
+      <div class="contact-grid">
+        <a class="contact-card" href="mailto:khaledkhemissi0@gmail.com">
+          <span class="contact-label">E‑mail</span>
+          <span class="contact-value">khaledkhemissi0@gmail.com</span>
+        </a>
+        <a class="contact-card" href="tel:+21692232243">
+          <span class="contact-label">Téléphone</span>
+          <span class="contact-value">+216 92 232 243</span>
+        </a>
+        <a class="contact-card" href="https://linkedin.com/in/khaled-khemissi" target="_blank" rel="noopener">
+          <span class="contact-label">LinkedIn</span>
+          <span class="contact-value">linkedin.com/in/khaled&#8209;khemissi</span>
+        </a>
+        <a class="contact-card" href="https://khaled-khemissi.github.io/khaled-portfolio" target="_blank" rel="noopener">
+          <span class="contact-label">Portfolio</span>
+          <span class="contact-value">khaled&#8209;khemissi.github.io</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <span>© <span id="year"></span> Khaled Khemissi — Hammamet, Tunisie</span>
+    <span class="footer-sep">·</span>
+    <span>Conçu et codé à la main</span>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
 </body>
 </html>
