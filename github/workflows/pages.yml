@@ -24,6 +24,40 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Build project media galleries
+        run: |
+          python3 - <<'PY'
+          import json
+          import pathlib
+          import re
+
+          root = pathlib.Path('.')
+          image_exts = {'.jpg', '.jpeg', '.png', '.webp', '.gif'}
+          video_exts = {'.mp4', '.webm', '.mov'}
+
+          for page in (root / 'project').glob('*.html'):
+              slug = page.stem
+              folder = root / 'assets' / 'project' / slug
+              media = []
+              if folder.exists():
+                  for item in sorted(folder.iterdir(), key=lambda path: path.name.lower()):
+                      if item.suffix.lower() in image_exts:
+                          media.append({'type': 'image', 'src': item.name, 'alt': f'Capture du projet {slug}'})
+                      elif item.suffix.lower() in video_exts:
+                          media.append({'type': 'video', 'src': item.name})
+
+              encoded = json.dumps(media, ensure_ascii=False, separators=(',', ':'))
+              encoded = encoded.replace('&', '\\u0026').replace('<', '\\u003c').replace('>', '\\u003e').replace('"', '\\u0022').replace("'", '\\u0027')
+              html = page.read_text(encoding='utf-8-sig')
+              html = re.sub(
+                  r'(<div class="project-gallery" data-gallery)(?: data-media=(?:\'[^\']*\'|"[^"]*"))?',
+                  lambda match: match.group(1) + ' data-media="' + encoded + '"',
+                  html,
+                  count=1,
+              )
+              page.write_text(html, encoding='utf-8')
+          PY
+
       - name: Cache bust CSS and JS
         run: |
           VERSION="${GITHUB_SHA::12}"
